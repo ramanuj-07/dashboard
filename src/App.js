@@ -20,12 +20,8 @@ const App = () => {
             <BrowserRouter>
                 <div className='flex relative dark:bg-main-dark-bg'>
                     <div className='fixed right-4 bottom-4' style={{ zIndex: '1000' }}>
-                    <OverlayTrigger
-              placement="top"
-              delay={{ show: 250, hide: 400 }}
-              overlay={renderTooltip}
-            >
-              <Button variant="link">
+                    <OverlayTrigger placement="top" delay={{ show: 250, hide: 400 }} overlay={renderTooltip}>
+                            <Button variant="link" type='button'className='text-3xl p-3' style={{ background:'white',borderRadius: '50%' }} >
                 <FiSettings size={24} />
               </Button>
             </OverlayTrigger>

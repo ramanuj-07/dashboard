@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { FiSettings } from 'react-icons/fi';
+import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+
 import './App.css'
 
-// import { BrowserRouter, Routes, Route } from 'react-dom-router';
-// import { FiSettings } from 'react-icons/fi';
-// import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 const App = () => {
     
     return (
         <div>
-            <h1 className='underline text-3xl'>
-             App    
-            </h1>
-           
+            <BrowserRouter>
+                <div className='flex relative dark:bg-main-dark-bg'>
+
+                </div>
+            </BrowserRouter>
        </div>
     )
 }

@@ -18,7 +18,7 @@ const App = () => {
         </Tooltip>
     );
 
-    const activeMenu = false;
+    const activeMenu = true;
 
     return (
         <div>

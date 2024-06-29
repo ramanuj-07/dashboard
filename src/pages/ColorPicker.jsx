@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { ColorPickerComponent } from '@syncfusion/ej2-react-inputs';
 
 const ColorPicker = () => {
   return (
-    <div>ColorPicker</div>
-  )
-}
+    <div className="color-picker">
+      <ColorPickerComponent />
+    </div>
+  );
+};
 
-export default ColorPicker
+export default ColorPicker;

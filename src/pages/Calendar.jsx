@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { CalendarComponent } from '@syncfusion/ej2-react-calendars';
 
 const Calendar = () => {
   return (
-    <div>Calendar</div>
-  )
-}
+    <div className="calendar">
+      <CalendarComponent />
+    </div>
+  );
+};
 
 export default Calendar;

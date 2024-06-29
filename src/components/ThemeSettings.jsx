@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 const ThemeSettings = () => {
-  return (
-    <div>ThemeSettings</div>
-  )
-}
+  const [theme, setTheme] = useState('light');
 
-export default ThemeSettings
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+    document.body.className = theme === 'light' ? 'dark' : 'light';
+  };
+
+  return (
+    <div className="theme-settings">
+      <button onClick={toggleTheme}>
+        Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
+      </button>
+    </div>
+  );
+};
+
+export default ThemeSettings;
